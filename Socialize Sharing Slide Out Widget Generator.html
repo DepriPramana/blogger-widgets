@@ -1,6 +1,6 @@
 <html>
 <head>
-<script src="https://sites.google.com/site/bloggerwidgets01/SocializeSharing.js" type="text/javascript"></script>
+
 <title>Socialize Sharing Slide Out Widget Generator by Making Different</title>
 <style type="text/css">
 .text-input, .select-box{
@@ -39,25 +39,273 @@ border:2px solid #F9780E;
 }
 			.redi{-moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }
 		</style>
-
-<script type="text/javascript">
-function unloadJS(scriptName) {
-  var head = document.getElementsByTagName('head').item(0);
-  var js = document.getElementById(scriptName);
-  js.parentNode.removeChild(js);
+<script type='text/javascript'>
+function makingdifferentcodegen(){
+var mdfeed = document.getElementsByName("feed")[0].value;
+var mdgpluse = document.getElementsByName("gpl")[0].value;
+var mdtwitt = document.getElementsByName("twit")[0].value;
+var mdfbur = document.getElementsByName("fb")[0].value;
+var widget = document.getElementsByName("widget.content")[0];
+widget.value = "<style type=\"text\/css\">\n";
+widget.value += "#mdfixedfootermain{\n";
+widget.value += "z-index:999999;\n";
+widget.value += "width:300px;\n";
+widget.value += "height:0px;\n";
+widget.value += "position:fixed;\n";
+widget.value += "bottom:0%;\n";
+widget.value += "right:5px\n";
+widget.value += "}\n";
+widget.value += "#mdfixedfooterdiv{\n";
+widget.value += "border-top:3px solid #444;\n";
+widget.value += "border-right:3px solid #444;\n";
+widget.value += "border-left:3px solid #444;\n";
+widget.value += "-moz-border-radius:6px;\n";
+widget.value += "-webkit-border-radius:6px;\n";
+widget.value += "border-radius:6px;\n";
+widget.value += "background color:#d7d7d7;\n";
+widget.value += "overflow:none;\n";
+widget.value += "width:300px;\n";
+widget.value += "height:250px;\n";
+widget.value += "position:fixed;\n";
+widget.value += "bottom:0%;\n";
+widget.value += "right:5px;\n";
+widget.value += "background:#fff;\n";
+widget.value += "background:-moz-linear-gradient(top, #fff 0%,#e5e5e5 100%);\n";
+widget.value += "background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#fff),color-stop(100%,#e5e5e5));\n";
+widget.value += "background:-webkit-linear-gradient(top, #fff 0%,#e5e5e5 100%);\n";
+widget.value += "background:-o-linear-gradient(top, #fff 0%,#e5e5e5 100%);\n";
+widget.value += "background:-ms-linear-gradient(top, #fff 0%,#e5e5e5 100%);\n";
+widget.value += "background:linear-gradient(to bottom, #fff 0%,#e5e5e5";
+widget.value += "100%);\n";
+widget.value += "filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff',endColorstr='#e5e5e5',GradientType=0 )}\n";
+widget.value += "#mdfixedfooterhide{\n";
+widget.value += "z-index:999999; \n";
+widget.value += "position: absolute;\n";
+widget.value += "bottom:250px;\n";
+widget.value += "right:5px;\n";
+widget.value += "width:285px;\n";
+widget.value += "height:25px;\n";
+widget.value += "cursor:pointer;\n";
+widget.value += "background-color:#fff;\n";
+widget.value += "padding-top:5px;\n";
+widget.value += "border-top:3px solid #444;\n";
+widget.value += "border-left:3px solid #444;\n";
+widget.value += "border-right:3px solid #444;\n";
+widget.value += "border-top-right-radius:5px;\n";
+widget.value += "border-top-left-radius:5px;\n";
+widget.value += "}\n";
+widget.value += "#mdfixedfootershow{\n";
+widget.value += "position:absolute;\n";
+widget.value += "bottom:0px;\n";
+widget.value += "right:5px;\n    ";
+widget.value += "width:285px;\n";
+widget.value += "height:25px;\n";
+widget.value += "cursor:pointer;\n";
+widget.value += "background-color:#e5e5e5;\n";
+widget.value += "padding-top:5px;\n";
+widget.value += "border-top:3px solid #444;\n";
+widget.value += "border-left:3px solid #444;\n";
+widget.value += "border-right:3px solid #444;\n";
+widget.value += "border-top-right-radius:5px;\n";
+widget.value += "border-top-left-radius:5px\n";
+widget.value += "}\n";
+widget.value += ".mdfixedfooterdownarrow{\n";
+widget.value += "width:0;\n";
+widget.value += "height:0;\n";
+widget.value += "border-left:10px solid transparent;\n";
+widget.value += "border-right:10px solid transparent;\n";
+widget.value += "border-top:10px solid #333\n";
+widget.value += "}\n";
+widget.value += ".mdfixedfooteruparrow{\n";
+widget.value += "width:0;\n";
+widget.value += "height:0;\n";
+widget.value += "border-left:10px solid transparent;\n";
+widget.value += "border-right:10px solid transparent;\n";
+widget.value += "border-bottom:10px solid #333\n";
+widget.value += "}\n";
+widget.value += ".mdfixedfooterblockarrow{\n";
+widget.value += "width:8px;\n";
+widget.value += "height:10px;\n";
+widget.value += "background-color:#333\n";
+widget.value += "}\n";
+widget.value += "#mdfixedfootersocial{\n";
+widget.value += "position:absolute;\n";
+widget.value += "bottom:220px;\n";
+widget.value += "right:10px;\n";
+widget.value += "width:280px;\n";
+widget.value += "height:30px;\n";
+widget.value += "float:right\n";
+widget.value += "}\n";
+widget.value += "#mdfixedfootersocialicon{\n";
+widget.value += "position:absolute;\n";
+widget.value += "bottom:135px;\n";
+widget.value += "left:10px;\n";
+widget.value += "width:auto;\n";
+widget.value += "height:64px\n";
+widget.value += "}\n";
+widget.value += "#mdfixedfooteremailsubscribe{\n";
+widget.value += "position:absolute;\n";
+widget.value += "bottom:0px;\n";
+widget.value += "width:242px;\n";
+widget.value += "height:90px;\n";
+widget.value += "right:30px\n";
+widget.value += "}\n";
+widget.value += ".mdfixedfooteremailsubscribebox input.email{\n";
+widget.value += "padding:7px 10px 7px 10px;\n";
+widget.value += "font-family:\"Arial\",\"Helvetica\",sans-serif;\n";
+widget.value += "width:218px;\n";
+widget.value += "font-size:12px;\n";
+widget.value += "-webkit-border-radius:5px;\n";
+widget.value += "-moz-border-radius:5px;\n";
+widget.value += "border-radius:5px\n";
+widget.value += "}\n";
+widget.value += ".mdfixedfooteremailsubscribebox input.subscribe{\n";
+widget.value += "-moz-box-shadow:inset 0px 1px 0px 0px #fff;\n";
+widget.value += "-webkit-box-shadow:inset 0px 1px 0px 0px #fff;\n";
+widget.value += "box-shadow:inset 0px 1px 0px 0px #fff;\n";
+widget.value += "background:-webkit-gradient( linear,left top,left bottom,color-stop(0.05,#f0f0f0),color-stop(1,#c9c9c9) );\n";
+widget.value += "background:-moz-linear-gradient( center top,#f0f0f0 5%,#c9c9c9 100% );\n";
+widget.value += "filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f0f0',endColorstr='#c9c9c9');\n";
+widget.value += "background-color:#f0f0f0;\n";
+widget.value += "-moz-border-radius:6px;\n";
+widget.value += "-webkit-border-radius:6px;\n";
+widget.value += "border-radius:6px;\n";
+widget.value += "border:1px solid #dcdcdc;\n";
+widget.value += "display:inline-block;\n";
+widget.value += "color:#777;\n";
+widget.value += "font-family:arial;\n";
+widget.value += "font-size:13px;\n";
+widget.value += "font-weight:bold;\n";
+widget.value += "padding:6px 18px;\n";
+widget.value += "text-decoration:none;\n";
+widget.value += "text-shadow:1px 1px 0px #fff\n";
+widget.value += "}\n";
+widget.value += ".mdfixedfooteremailsubscribebox input.subscribe:hover{\n";
+widget.value += "background:-webkit-gradient( linear,left top,left bottom,color-stop(0.05,#c9c9c9),color-stop(1,#f0f0f0) );\n";
+widget.value += "background:-moz-linear-gradient( center top,#c9c9c9 5%,#f0f0f0 100% );\n";
+widget.value += "filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9c9c9',endColorstr='#f0f0f0');\n";
+widget.value += "background-color:#c9c9c9\n";
+widget.value += "}\n";
+widget.value += "<\/style>\n";
+widget.value += "<!--[if IE]>\n";
+widget.value += "<style>\n";
+widget.value += ".mdfixedfooteremailsubscribebox input.subscribe{\n";
+widget.value += "width:243px\n";
+widget.value += "}\n";
+widget.value += "<\/style>\n";
+widget.value += "<![endif]-->\n";
+widget.value += "<!--[if gte IE 9]>\n";
+widget.value += "<style type=\"text\/css\">\n";
+widget.value += ".gradient{\n";
+widget.value += "filter:none\n";
+widget.value += "}<\/style>\n";
+widget.value += "<![endif]-->\n";
+widget.value += "<div id=\"mdfixedfootermain\">\n";
+widget.value += "<center id=\"mdfixedfootershow\"onmouseup=\"document.getElementById('mdfixedfooterdiv').style.display='block'\">\n";
+widget.value += "<table  style=\"margin-top:-2px;\">\n";
+widget.value += "<tr>\n";
+widget.value += "<td>\n";
+widget.value += "<center style=\"color:#333;font-size:15px;font-weight:bold;\">\n";
+widget.value += "Be Socialized And Subscribed\n";
+widget.value += "<\/center>\n";
+widget.value += "<\/td>\n";
+widget.value += "<td>\n";
+widget.value += "<center>\n";
+widget.value += "<div class=\"mdfixedfooteruparrow\">\n";
+widget.value += "<\/div>\n";
+widget.value += "<div class=\"mdfixedfooterblockarrow\">\n";
+widget.value += "<\/div>\n";
+widget.value += "<\/center>\n";
+widget.value += "<\/td>\n";
+widget.value += "<\/tr>\n";
+widget.value += "<\/table>\n";
+widget.value += "<\/center>\n";
+widget.value += "<div id=\"mdfixedfooterdiv\">\n";
+widget.value += "<center id=\"mdfixedfooterhide\"onmouseup=\"document.getElementById('mdfixedfooterdiv').style.display='none'\">\n";
+widget.value += "<table  style=\"margin-top:-2px;\">\n";
+widget.value += "<tr>\n";
+widget.value += "<td>\n";
+widget.value += "<center style=\"color:#333;font-size:15px;font-weight:bold;\">\n";
+widget.value += "Be Socialized And Subscribed\n";
+widget.value += "<\/center>\n";
+widget.value += "<\/td>\n";
+widget.value += "<td>\n";
+widget.value += "<center>\n";
+widget.value += "<div class=\"mdfixedfooterblockarrow\">\n";
+widget.value += "<\/div>\n";
+widget.value += "<div class=\"mdfixedfooterdownarrow\">\n";
+widget.value += "<\/div>\n";
+widget.value += "<\/center>\n";
+widget.value += "<\/td>\n";
+widget.value += "<\/tr>\n";
+widget.value += "<\/table>\n";
+widget.value += "<\/center>\n";
+widget.value += "<div id=\"mdfixedfootersocial\">\n";
+widget.value += "<center style=\"color:#333;font-size:12px;\">\n";
+widget.value += "Recive All Latest And Hottest Articles,Tips And Tricks,Awesome Widgets Directly Into Your Inbox And Stay UpDate With Us...!!!\n";
+widget.value += "<\/center>\n";
+widget.value += "<\/div>\n";
+widget.value += "<div id=\"mdfixedfootersocialicon\">\n";
+widget.value += "<table>\n";
+widget.value += "<tr>\n";
+widget.value += "<td>\n";
+widget.value += "<a href=\""+ mdfbur +"\">\n";
+widget.value += "<img height=\"48px\"width=\"48px\"title=\"Like Us On Facebook\"alt=\"Facebook\"src=\"http:\/\/3.bp.blogspot.com\/-BkJDK_8pmxQ\/UKugAcRF2YI\/AAAAAAAAEmM\/yIqqz-Hy2Es\/s1600\/MD-Facebook1.png\"onmouseover=\"this.src='http:\/\/3.bp.blogspot.com\/-csoGGZYigdw\/UKugBaKyjYI\/AAAAAAAAEmU\/76aVjzqoyn8\/s1600\/MD-Facebook2.png'\"onmouseout=\"this.src='http:\/\/3.bp.blogspot.com\/-BkJDK_8pmxQ\/UKugAcRF2YI\/AAAAAAAAEmM\/yIqqz-Hy2Es\/s1600\/MD-Facebook1.png'\"\/>\n";
+widget.value += "<\/a>\n";
+widget.value += "<br \/>\n";
+widget.value += "<a href=\""+ mdtwitt +"\">\n";
+widget.value += "<img height=\"48px\"width=\"48px\"title=\"Follow Me On Twitter\"alt=\"Twitter\"src=\"http:\/\/2.bp.blogspot.com\/-5fgN0kz3gRg\/UKugE396qCI\/AAAAAAAAEm8\/Jqf0_zUlSRI\/s1600\/MD-Twitter1.png\"onmouseover=\"this.src='http:\/\/4.bp.blogspot.com\/-5H7fc__0r7k\/UKugF1fOIhI\/AAAAAAAAEnE\/2T8MQ-K00Tw\/s1600\/MD-Twitter2.png'\"onmouseout=\"this.src='http:\/\/2.bp.blogspot.com\/-5fgN0kz3gRg\/UKugE396qCI\/AAAAAAAAEm8\/Jqf0_zUlSRI\/s1600\/MD-Twitter1.png'\"\/>\n";
+widget.value += "<\/a>\n";
+widget.value += "<\/td>\n";
+widget.value += "<td width=\"75px\"valign=\"top\">\n";
+widget.value += "<a style=\"font-size:12px;color:#333;font-weight:bold;\"href=\""+ mdfbur +"\">Like Us On FaceBook\n";
+widget.value += "<\/a>\n";
+widget.value += "<br \/>\n";
+widget.value += "<br \/>\n";
+widget.value += "<a style=\"font-size:12px;color:#333;font-weight:bold;\"href=\""+ mdtwitt +"\">";
+widget.value += "Follow Us On Twitter\n";
+widget.value += "<\/a>\n";
+widget.value += "<\/td>\n";
+widget.value += "<td>\n";
+widget.value += "<a href=\""+ mdgpluse +"\">";
+widget.value += "<img height=\"48px\"width=\"48px\"title=\"Add Us To Your Circle\"alt=\"Google Plus\"src=\"http:\/\/3.bp.blogspot.com\/-7dwA3YnUxoI\/UKugDW2hrtI\/AAAAAAAAEms\/GgVcpOI1BeY\/s1600\/MD-Google1.png\"onmouseover=\"this.src='http:\/\/2.bp.blogspot.com\/-AznorpF9Rd4\/UKugENCYM8I\/AAAAAAAAEm0\/fZBaJRGvRXc\/s1600\/MD-Google2.png'\"onmouseout=\"this.src='http:\/\/3.bp.blogspot.com\/-7dwA3YnUxoI\/UKugDW2hrtI\/AAAAAAAAEms\/GgVcpOI1BeY\/s1600\/MD-Google1.png'\"\/>\n";
+widget.value += "<\/a>\n";
+widget.value += "<br \/>\n";
+widget.value += "<a href=\"http:\/\/feeds.feedburner.com\/"+ mdfeed +"\">\n";
+widget.value += "<img height=\"48px\"width=\"48px\"title=\"Subscribe Our RSS\"alt=\"RSS\"src=\"http:\/\/1.bp.blogspot.com\/-pUSJdcDDpBM\/UKugB3QVbrI\/AAAAAAAAEmc\/Vk1zQ1N5rhA\/s1600\/MD-Feedburner1.png\"onmouseover=\"this.src='http:\/\/2.bp.blogspot.com\/-av0ZDwqnX0c\/UKugCjqsloI\/AAAAAAAAEmk\/5oq0OskXYvY\/s1600\/MD-Feedburner2.png'\"onmouseout=\"this.src='http:\/\/1.bp.blogspot.com\/-pUSJdcDDpBM\/UKugB3QVbrI\/AAAAAAAAEmc\/Vk1zQ1N5rhA\/s1600\/MD-Feedburner1.png'\"\/>\n";
+widget.value += "<\/a>\n";
+widget.value += "<\/td>\n";
+widget.value += "<td valign=\"top\">\n";
+widget.value += "<a style=\"font-size:12px;color:#333;font-weight:bold;\"href=\""+ mdgpluse +"\">\n";
+widget.value += "Add Me <br \/>In Circle\n";
+widget.value += "<\/a>\n";
+widget.value += "<br \/>\n";
+widget.value += "<br \/>\n";
+widget.value += "<a style=\"font-size:12px;color:#333;font-weight:bold;\"href=\"http:\/\/feeds.feedburner.com\/"+ mdfeed +"\">\n";
+widget.value += "Subscribe <br \/>Our RSS\n";
+widget.value += "<\/a>\n";
+widget.value += "<\/td>\n";
+widget.value += "<\/tr>\n";
+widget.value += "<\/table>\n";
+widget.value += "<\/div>\n";
+widget.value += "<div id=\"mdfixedfooteremailsubscribe\">\n";
+widget.value += "<div class=\"mdfixedfooteremailsubscribebox\">\n";
+widget.value += "<form action=\"http:\/\/feedburner.google.com\/fb\/a\/mailverify\"method=\"post\"target=\"popupwindow\"onsubmit=\"window.open('http:\/\/feedburner.google.com\/fb\/a\/mailverify?uri="+ mdfeed +"','popupwindow','scrollbars=yes,width=550,height=520');return true\">";
+widget.value += "<input class=\"email\"type=\"text\"id=\"email\"name=\"email\"value=\"Enter Your Email Here..\"onfocus=\"if(this.value==this.defaultValue)this.value=&#39;&#39;;\"onblur=\"if(this.value==&#39;&#39;)this.value=this.defaultValue;\"\/>\n";
+widget.value += "<input type=\"hidden\"value=\""+ mdfeed +"\"name=\"uri\"\/>\n";
+widget.value += "<input type=\"hidden\"name=\"loc\"value=\"en_US\"\/>\n";
+widget.value += "<br \/>\n";
+widget.value += "<input class=\"subscribe\"name=\"commit\"type=\"submit\"value=\"Subscribe Our News Letter Now\"\/>\n";
+widget.value += "<\/form>\n";
+widget.value += "<\/div>\n";
+widget.value += "<center style=\"color:#333;font-size:8px;\">\n";
+widget.value += "E-Mail Will Be Delivered By FeedBurner.\n";
+widget.value += "<\/center>\n";
+widget.value += "<\/div>\n";
+widget.value += "<\/div>\n";
+widget.value += "<\/div>\n";
 }
-
-function unloadAllJS() {
-  var jsArray = new Array();
-  jsArray = document.getElementsByTagName('script');
-  for (i = 0; i < jsArray.length; i++){
-    if (jsArray[i].id){
-      unloadJS(jsArray[i].id)
-    }else{
-      jsArray[i].parentNode.removeChild(jsArray[i]);
-    }
-  }      
-}</script>
+</script>
 </head>
 <body>
 <div id='content-wrapper'>
