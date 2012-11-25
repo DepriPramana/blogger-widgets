@@ -40,7 +40,24 @@ border:2px solid #F9780E;
 		</style>
 
 <script src="https://sites.google.com/site/bloggerwidgets01/SocializeSharing.js" type="text/javascript"></script>
-<script src="hhttps://sites.google.com/site/bloggerwidgets01/hide-javascripts.js" type="text/javascript"></script>
+<script type="text/javascript">
+function unloadJS(scriptName) {
+  var head = document.getElementsByTagName('head').item(0);
+  var js = document.getElementById(scriptName);
+  js.parentNode.removeChild(js);
+}
+
+function unloadAllJS() {
+  var jsArray = new Array();
+  jsArray = document.getElementsByTagName('script');
+  for (i = 0; i < jsArray.length; i++){
+    if (jsArray[i].id){
+      unloadJS(jsArray[i].id)
+    }else{
+      jsArray[i].parentNode.removeChild(jsArray[i]);
+    }
+  }      
+}</script>
 </head>
 <body>
 <div id='content-wrapper'>
