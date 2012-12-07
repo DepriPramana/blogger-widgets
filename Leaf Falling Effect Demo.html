@@ -1,0 +1,73 @@
+<html>
+<head>
+<style>
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+overflow:hidden;
+}
+#background {
+  z-index: -999;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, blockquote {
+background: transparent;
+}
+#content-wrappers { line-height:10px; font-size:height:10px;position: absolute; bottom:0px;width: 100%;text-align:center; margin: 100px auto; padding: 5px; background: #80a293; }
+</style>
+</head>
+<body>
+<img id="background" src='http://3.bp.blogspot.com/-U8aFBF0nH8g/UMG52uDPFsI/AAAAAAAAFQs/2ijl7rwtIKI/s1600/light-green-leaves-wallpaper.jpg'/>
+<div id="content-wrappers" style="font: 25px/2 Georgia, Serif; margin: 0 0 30px 0; text-indent: 40px;">
+<a href="http://gj37765.blogspot.com/2012/12/add-leaf-falling-effect-in-blogger.html">Back To Tutorial</a>
+</div>
+<script>if(typeof jQuery=='undefined'){document.write('<'+'script');document.write(' language="javascript"');document.write(' type="text/javascript"');document.write(' src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">');document.write('</'+'script'+'>')}</script><script>if(!image_urls){var image_urls=Array()}if(!flash_urls){var flash_urls=Array()}image_urls['rain1']="http://3.bp.blogspot.com/-bH72rAXHnLA/UMG5q0ZKQ_I/AAAAAAAAFQM/J8cQ6cP_1ks/s1600/Leaf1.png";image_urls['rain2']="http://2.bp.blogspot.com/-sYEBH-PlRjw/UMG5tAbpx6I/AAAAAAAAFQU/z343xo80F8k/s1600/Leaf2.png";image_urls['rain3']="http://2.bp.blogspot.com/-vc1D74L_B3k/UMG5xW3F0FI/AAAAAAAAFQk/BuhLTp4lpl8/s1600/Leaf6.png";image_urls['rain4']="http://1.bp.blogspot.com/-6ITYtjlpbog/UMG5vGq29-I/AAAAAAAAFQc/eee_PBRaQ8k/s1600/Leaf5.png";$(document).ready(function(){var c=$(window).width();var d=$(window).height();var e=function(a,b){return Math.round(a+(Math.random()*(b-a)))};var f=function(a){setTimeout(function(){a.css({left:e(0,c)+'px',top:'-30px',display:'block',opacity:'0.'+e(10,100)}).animate({top:(d-10)+'px'},e(7500,8000),function(){$(this).fadeOut('slow',function(){f(a)})})},e(1,8000))};$('<div></div>').attr('id','rainDiv')
+.css({position:'fixed',width:(c-20)+'px',height:'1px',left:'0px',top:'-5px',display:'block'}).appendTo('body');for(var i=1;i<=20;i++){var g=$('<img/>').attr('src',image_urls['rain'+e(1,4)])
+.css({position:'absolute',left:e(0,c)+'px',top:'-30px',display:'block',opacity:'0.'+e(10,100),'margin-left':0}).addClass('rainDrop').appendTo('#rainDiv');f(g);g=null};var h=0;var j=0;$(window).resize(function(){c=$(window).width();d=$(window).height()})});</script>
+<script>if(typeof jQuery=='undefined'){document.write('<'+'script');document.write(' language="javascript"');document.write(' type="text/javascript"');document.write(' src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">');document.write('</'+'script'+'>')}</script>
+<style type="text/css">
+/*<![CDATA[*/
+#fbplikebox{display: block;padding: 0;z-index: 99999;position: fixed;}.fbplbadge {background-color:#3B5998;display: block;height: 150px;top: 50%;margin-top: -75px;position: absolute;left: -47px;width: 47px;background-image: url("http://4.bp.blogspot.com/-GACw7ApUC7Q/T9yn4xcSjjI/AAAAAAAADU0/riFGzBVgF-k/s1600/md_vertical-right.png");background-repeat: no-repeat;overflow: hidden;-webkit-border-top-left-radius: 8px;-webkit-border-bottom-left-radius: 8px;-moz-border-radius-topleft: 8px;-moz-border-radius-bottomleft: 8px;border-top-left-radius: 8px;border-bottom-left-radius: 8px;}.mdfbplikebox span{bottom: 12px;font: 8px "lucida grande",tahoma,verdana,arial,sans-serif;position: absolute;right: 6px;text-align: right;z-index: 99999;}.mdfbplikebox span a{color: #808080;text-decoration:none;}.mdfbplikebox span a:hover{text-decoration:underline;}
+/*]]>*/
+</style>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function(md){
+md(document).ready(function(){
+var $dur = "medium"; // Duration of Animation
+md("#fbplikebox").css({right: -250, "top" : 100 })
+md("#fbplikebox").hover(function () {
+md(this).stop().animate({
+right: 0
+}, $dur);
+}, function () {
+md(this).stop().animate({
+right: -250
+}, $dur);
+});
+md("#fbplikebox").show();
+});
+})(jQuery);
+/*]]>*/
+</script>
+<div class="mdfbplikebox">
+<div id="fbplikebox" style="display:none;">
+<div class="fbplbadge"></div>
+ <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fmakingdifferent&amp;width=250&amp;height=250&amp;colorscheme=light&amp;show_faces=true&amp;border_color=%23C4C4C4&amp;stream=false&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:250px; height:250px;background:#F5EBF5;" allowtransparency="true">
+</iframe>
+<span>
+By <a href="http://www.gj37765.blogspot.com/">Making DIfferent</a> / <a href="http://gj37765.blogspot.com/2012/04/add-static-facebook-pop-out-like-box.html">+Get This!</a>
+</span>
+</div>
+</div>
+</body>
+</html>
