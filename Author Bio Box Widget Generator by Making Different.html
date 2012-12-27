@@ -1,0 +1,369 @@
+<html>
+<head>
+<title>Author Bio Box Widget Generator by Making Different</title>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<link rel="stylesheet" type="text/css" href="https://gj37765.googlecode.com/svn/Color Picker/colorpicker.css" media="all" />
+<script type='text/javascript'src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=1.7.1'>
+</script> 
+<script type="text/javascript" src="https://gj37765.googlecode.com/svn/Color Picker/jquery.validationEngine.js"></script>
+<script type="text/javascript" src="https://gj37765.googlecode.com/svn/Color Picker/colorpicker.js"></script>
+<script type="text/javascript" src="https://gj37765.googlecode.com/svn/Color Picker/widget.js"></script>
+<style type="text/css">
+.text-input, .select-box{
+	margin:0 2px;
+	padding:4px 6px;
+	border: 1px solid #F9780E;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-family: gergia;
+	font-style: italic;
+
+	-webkit-box-shadow: 1px 1px 1px #FC7507;
+	-moz-box-shadow: 1px 1px 1px #FC7507;
+	box-shadow: 1px 1px 1px #FC7507;
+	font-size: 14px;
+	color: #666;
+	max-width:auto;
+}
+
+.textarea-box, .textareaBox{
+	border:1px solid #F9780E;
+	padding:6px;
+	-webkit-resize: none;
+	-moz-resize: none;
+	resize: none;
+	-webkit-box-shadow: 1px 1px 1px #dfdfdf;
+	-moz-box-shadow: 1px 1px 1px #dfdfdf;
+	box-shadow: 1px 1px 1px #dfdfdf;
+	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.textareaBox{
+	display:block;
+	width:90%;
+	padding:10px;
+	max-width:98%;
+	margin:20px auto;
+	max-height:600px;
+	min-height:300px;
+}
+
+			body { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;font-size:18px;
+}
+
+label       { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;font-size:15px; font-weight:bold; }
+
+fieldset    { padding:0 1.4em 1.4em 1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
+			#outer-wrapper {font-family: Verdana, Arial;}
+			#content-wrapper { width: 98%; max-widtd:980px;  margin: 0 auto;  padding: 5px;  text-align: left; 
+background:#ffffff;
+}
+			#content-wrapper h2 {text-align:center;font-size:20px;margin: 5px 0 1em ;padding: 3px 10px;background-color: #ffffff;font-size:16px;color:#000;border:1px solid #111;
+}
+		</style>
+<script type='text/javascript'>
+//<!--
+function makingdifferentcodegen(){
+var fb = document.getElementsByName("mdfb")[0].value;
+var twitter = document.getElementsByName("mdtwitter")[0].value;
+var gplus = document.getElementsByName("mdgplus")[0].value;
+var img = document.getElementsByName("mdimg")[0].value;
+var feed = document.getElementsByName("mdfeed")[0].value;
+var bgcolor = document.getElementsByName("mdbgcolor")[0].value;
+var fontcolor = document.getElementsByName("mdfontcolor")[0].value;
+var bordercolor = document.getElementsByName("mdbordercolor")[0].value;
+var bio = document.getElementsByName("mdbio")[0].value;
+var widget = document.getElementsByName("authcode")[0];
+var widget2 = document.getElementsByName("authcode2")[0];
+widget.value = "<style>\n";
+widget.value += ".mdauthor_info{\n";
+widget.value += "float:left;\n";
+widget.value += "width:550px;\n";
+widget.value += "padding:15px;\n";
+widget.value += "border:1px solid #"+ bordercolor +";\n";
+widget.value += "margin-bottom:15px;\n";
+widget.value += "margin-top:15px;\n";
+widget.value += "background:#"+ bgcolor +";color:#"+ fontcolor +";\n";
+widget.value += "}\n";
+widget.value += ".mdauthor_info:hover{\n";
+widget.value += "background:#"+ bgcolor +";\n";
+widget.value += "border:1px solid #ccc;\n";
+widget.value += "-webkit-box-shadow:0px 0px 10px  rgba(0, 0, 0, .3);\n";
+widget.value += "-moz-box-shadow:0px 0px 10px  rgba(0, 0, 0, .3);\n";
+widget.value += "box-shadow:0px 0px 10px  rgba(0, 0, 0, .3);\n";
+widget.value += "}\n";
+widget.value += ".mdauthor_info h3{\n";
+widget.value += "color:#000;\n";
+widget.value += "margin-bottom:10px;\n";
+widget.value += "}\n";
+widget.value += ".mdauthor_info h3:hover{\n";
+widget.value += "border : 1px solid #EEEEEE;\n";
+widget.value += "-webkit-box-shadow:0px 0px 10px  rgba(0, 0, 0, .3);\n";
+widget.value += "-moz-box-shadow:0px 0px 10px  rgba(0, 0, 0, .3);\n";
+widget.value += "box-shadow:0px 0px 10px  rgba(0, 0, 0, .3);\n";
+widget.value += "}\n";
+widget.value += ".mdauthor_photo{\n";
+widget.value += "float:right;\n";
+widget.value += "margin:0 0 0 10px;\n";
+widget.value += "}\n";
+widget.value += ".mdauthor_photo img{\n";
+widget.value += "border:1px solid #666;\n";
+widget.value += "-webkit-transition:-webkit-transform .15s linear;\n";
+widget.value += "-moz-transition:-moz-transform .15s linear;\n";
+widget.value += "-o-transition:-o-transform .15s linear;transition:transform .15s linear;\n";
+widget.value += "-webkit-box-shadow:0 3px 6px rgba(0,0,0,.25);\n";
+widget.value += "-moz-box-shadow:0 3px 6px rgba(0,0,0,.25);\n";
+widget.value += "box-shadow:0 3px 6px rgba(0,0,0,.25);\n";
+widget.value += "padding:5px 5px 5px 5px;-webkit-transform:rotate(+2deg);\n";
+widget.value += "-moz-transform:rotate(+2deg);-ms-transform:rotate(+2deg);\n";
+widget.value += "-o-transform:rotate(+2deg);transform:rotate(+2deg);float:left;\n";
+widget.value += "}\n";
+widget.value += ".mdauthor_photo img:hover{\n";
+widget.value += "background:#FFFFFF;\n";
+widget.value += "border : 1px solid #EEEEEE;\n";
+widget.value += "-webkit-box-shadow:0px 0px 10px  rgba(0, 0, 0, .3);\n";
+widget.value += "-moz-box-shadow:0px 0px 10px  rgba(0, 0, 0, .3);\n";
+widget.value += "box-shadow:0px 0px 10px  rgba(0, 0, 0, .3);\n";
+widget.value += "-webkit-transform:rotate(-1deg);\n";
+widget.value += "-moz-transform:rotate(-1deg);\n";
+widget.value += "-ms-transform:rotate(-1deg);\n";
+widget.value += "-o-transform:rotate(-1deg);\n";
+widget.value += "transform:rotate(-1deg);\n";
+widget.value += "}\n";
+widget.value += "ul.mdsocial{\n";
+widget.value += "list-style:none;\n";
+widget.value += "margin:10px;\n";
+widget.value += "overflow:hidden;\n";
+widget.value += "}\n";
+widget.value += ".mdsocial li{\n";
+widget.value += "float:right;\n";
+widget.value += "background:none !important;\n";
+widget.value += "padding:0 !important;\n";
+widget.value += "margin:0 8px;\n";
+widget.value += "}\n";
+widget.value += ".mdsocial li a{\n";
+widget.value += "display:block;\n";
+widget.value += "width:40px;\n";
+widget.value += "height:40px;\n";
+widget.value += "background:url(\"http:\/\/2.bp.blogspot.com\/-IMM_B7aaLQA\/T7ObAft4GbI\/AAAAAAAADN0\/mT6xK72Xe9I\/s1600\/social.png\") no-repeat transparent;\n";
+widget.value += "text-indent:-99999em !important;\n";
+widget.value += "}\n";
+widget.value += ".mdsocial li a:hover{\n";
+widget.value += "padding:0 !important;\n";
+widget.value += "}\n";
+widget.value += ".mdsocial li.rssicon a{\n";
+widget.value += "background-position:0 0;\n";
+widget.value += "}\n";
+widget.value += ".mdsocial li.twicon a{\n";
+widget.value += "background-position:-50px 0;\n";
+widget.value += "}\n";
+widget.value += ".mdsocial li.fbicon a{\n";
+widget.value += "background-position:-100px 0;\n";
+widget.value += "}\n";
+widget.value += ".mdsocial li.gicon a{\n";
+widget.value += "background-position:-150px 0;\n";
+widget.value += "}\n";
+widget.value += ".mdsocial li.rssicon a:hover{\n";
+widget.value += "background-position:0 -50px;\n";
+widget.value += "}\n";
+widget.value += ".mdsocial li.twicon a:hover{\n";
+widget.value += "background-position:-50px -50px;\n";
+widget.value += "}\n";
+widget.value += ".mdsocial li.fbicon a:hover{\n";
+widget.value += "background-position:-100px -50px;\n";
+widget.value += "}\n";
+widget.value += ".mdsocial li.gicon a:hover{\n";
+widget.value += "background-position:-150px -50px;\n";
+widget.value += "}\n";
+widget.value += ".mdlinediv{\n";
+widget.value += "margin-top:25px;\n";
+widget.value += "height:0px;\n";
+widget.value += "clear:both;\n";
+widget.value += "display:block;\n";
+widget.value += "border-top:1px solid #fefefe;\n";
+widget.value += "border-bottom:1px solid #CCCCCC;\n";
+widget.value += "}\n";
+widget.value += ".mdemailbutton{\n";
+widget.value += "background:#f7f8f9;\n";
+widget.value += "background:-webkit-gradient(linear,left top,left bottom,color-stop(#f7f8f9,0),color-stop(#e9e9e9,1));\n";
+widget.value += "background:-webkit-linear-gradient(top, #f7f8f9 0%, #e9e9e9 100%);\n";
+widget.value += "background:-moz-linear-gradient(top, #f7f8f9 0%, #e9e9e9 100%);\n";
+widget.value += "background:-o-linear-gradient(top, #f7f8f9 0%, #e9e9e9 100%);\n";
+widget.value += "background:linear-gradient(top, #f7f8f9 0%, #e9e9e9 100%);\n";
+widget.value += "filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f8f9', endColorstr='#e9e9e9',GradientType=0 );\n";
+widget.value += "border:1px solid #ddd;\n";
+widget.value += "-webkit-border-radius:4px;\n";
+widget.value += "-moz-border-radius:4px;\n";
+widget.value += "border-radius:4px;\n";
+widget.value += "padding:6px 12px;\n";
+widget.value += "margin:0;-webkit-box-shadow:0 1px 0 #f9f9f9 inset, 1px 1px 1px rgba(223,223,223,0.4);\n";
+widget.value += "-moz-box-shadow:0 1px 0 #f9f9f9 inset, 1px 1px 1px rgba(223,223,223,0.4);box-shadow:0 1px 0 #f9f9f9 inset, 1px 1px 1px rgba(223,223,223,0.4);\n";
+widget.value += "color:#888;\n";
+widget.value += "text-shadow:0 1px 0 #fff;\n";
+widget.value += "line-height:1.2;\n";
+widget.value += "cursor:pointer;\n";
+widget.value += "font-size:13px;\n";
+widget.value += "}\n";
+widget.value += ".mdemailbutton:hover{\n";
+widget.value += "background:#f1f1f1;\n";
+widget.value += "background:-webkit-gradient(linear,left top,left bottom,color-stop(#f1f1f1,0),color-stop(#e0e0e0,1));\n";
+widget.value += "background:-webkit-linear-gradient(top, #f1f1f1 0%, #e0e0e0 100%);\n";
+widget.value += "background:-moz-linear-gradient(top, #f1f1f1 0%, #e0e0e0 100%);\n";
+widget.value += "background:-o-linear-gradient(top, #f1f1f1 0%, #e0e0e0 100%);\n";
+widget.value += "background:linear-gradient(top, #f1f1f1 0%, #e0e0e0 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#e0e0e0',GradientType=0 );\n";
+widget.value += "text-decoration:none !important;\n";
+widget.value += "}\n";
+widget.value += ".mdemail{\n";
+widget.value += "clear:both;\n";
+widget.value += "width:250px;\n";
+widget.value += "margin:10px 0;\n";
+widget.value += "float:left;\n";
+widget.value += "}\n";
+widget.value += ".mdemailform{\n";
+widget.value += "position:relative;\n";
+widget.value += "width:250px;\n";
+widget.value += "margin:0 auto;\n";
+widget.value += "}\n";
+widget.value += ".mdemailinput{\n";
+widget.value += "width:200px;\n";
+widget.value += "height:18px;\n";
+widget.value += "margin:0 auto;\n";
+widget.value += "padding:8px 40px 8px 10px;border:1px solid #ddd;\n";
+widget.value += "-webkit-border-radius:4px;-moz-border-radius:4px;\n";
+widget.value += "border-radius:4px;font-family:georgia;\n";
+widget.value += "font-style:italic;\n";
+widget.value += "-webkit-box-shadow:1px 1px 2px #dfdfdf;\n";
+widget.value += "-moz-box-shadow:1px 1px 2px #dfdfdf;\n";
+widget.value += "box-shadow:1px 1px 2px #dfdfdf;\n";
+widget.value += "font-size:14px;color:#666;\n";
+widget.value += "}\n";
+widget.value += ".mdemailbutton{\n";
+widget.value += "-webkit-border-top-right-radius:4px;\n";
+widget.value += "-webkit-border-bottom-right-radius:4px;\n";
+widget.value += "-moz-border-radius-topright:4px;\n";
+widget.value += "-moz-border-radius-bottomright:4px;\n";
+widget.value += "border-top-right-radius:4px;\n";
+widget.value += "border-bottom-right-radius:4px;\n";
+widget.value += "-webkit-border-top-left-radius:0px;\n";
+widget.value += "-webkit-border-bottom-left-radius:0px;\n";
+widget.value += "-moz-border-radius-topleft:0px;\n";
+widget.value += "-moz-border-radius-bottomleft:0px;\n";
+widget.value += "border-top-left-radius:0px;border-bottom-left-radius:0px;\n";
+widget.value += "padding:9px;\n";
+widget.value += "position:absolute;\n";
+widget.value += "right:-2px;\n";
+widget.value += "top:0;\n";
+widget.value += "display:block;\n";
+widget.value += "line-height:16px;\n";
+widget.value += "}\n";
+widget.value += ".mdemailbutton{\n";
+widget.value += "padding:8px !important;\n";
+widget.value += "}\n";
+widget.value += ".mdemailform, .mdemailinput{\n";
+widget.value += "width:98% !important;\n";
+widget.value += "-webkit-box-sizing:border-box;\n";
+widget.value += "-moz-box-sizing:border-box;\n";
+widget.value += "box-sizing:border-box;\n";
+widget.value += "height:auto;\n";
+widget.value += "}\n";
+widget.value += "<\/style>\n";
+widget2.value = "<b:if cond='data:blog.pageType == &quot;item&quot;'>\n";
+widget2.value += "<div class='mdauthor_info'>\n";
+widget2.value += "<div class='mdauthor_photo'>\n";
+widget2.value += "<img alt='author' height='150' src='"+ img +"' width='150'\/>\n";
+widget2.value += "<\/div>\n";
+widget2.value += "<h2>This post was written by:<\/h2>\n";
+widget2.value += "<p>"+ bio +"<\/p>\n";
+widget2.value += "<div class=\"mdlinediv\"><\/div>\n";
+widget2.value += "<div class=\"mdemail\">\n";
+widget2.value += "<small style=\"text-align:center;\">Get Free Email Updates to your Inbox!<\/small>\n";
+widget2.value += "<form action=\"http:\/\/feedburner.google.com\/fb\/a\/mailverify\" method=\"post\" target=\"popupwindow\" onsubmit=\"window.open('http:\/\/feedburner.google.com\/fb\/a\/mailverify?uri="+ feed +"', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true\" class=\"mdemailform\">\n";
+widget2.value += "<input value=\""+ feed +"\" name=\"uri\" type=\"hidden\"\/> \n";
+widget2.value += "<input name=\"loc\" value=\"en_US\" type=\"hidden\"\/>\n";
+widget2.value += "<input onblur='if (this.value == \"\") {this.value = \"Enter your email...\";}' onfocus='if (this.value == \"Enter your email...\") {this.value = \"\"}' value=\"Enter your email...\" name=\"email\" class=\"mdemailinput\" type=\"text\"\/>\n ";
+widget2.value += "<input class=\"mdemailbutton\" value=\"SignUp\" title=\"\" type=\"submit\"\/>\n";
+widget2.value += "<\/form>\n";
+widget2.value += "<\/div>\n";
+widget2.value += "<ul class=\"mdsocial\">\n";
+widget2.value += "<li class=\"rssicon\">\n";
+widget2.value += "<a href=\"http:\/\/feeds.feedburner.com\/"+ feed +"\">Rss<\/a>\n";
+widget2.value += "<\/li><li class=\"twicon\">\n";
+widget2.value += "<a href=\"http:\/\/twitter.com\/"+ twitter +"\">Twitter<\/a>\n";
+widget2.value += "<\/li><li class=\"fbicon\">\n";
+widget2.value += "<a href=\""+ fb +"\">FaceBook<\/a>\n";
+widget2.value += "<\/li><li class=\"gicon\">\n";
+widget2.value += "<a href=\"https:\/\/plus.google.com\/"+ gplus +"\">Google +<\/a>\n";
+widget2.value += "<\/li>\n";
+widget2.value += "<\/ul>\n";
+widget2.value += "<\/div>\n";
+widget2.value += "<\/b:if>";
+document.getElementsByName("preview")[0].disabled=false;
+}
+function mdpredemo() {	
+var demodata = document.getElementsByName('authcode2')[0].value + document.getElementsByName('authcode')[0].value;
+newwindow=window.open('','name','');
+var tmp = newwindow.document;tmp.write('<html><head><title>Demo for Author bio box widget  by Making Different</title></head><body>' + demodata + '</body></html>');tmp.close();
+}
+//-->
+</script>
+</head>
+<body>
+<div id='content-wrapper'>
+<h2>Author Bio Box Widget Generator by Making Different</h2>
+<fieldset><legend>Customize</legend>
+<table width="100%">
+<tr>
+<td width='40%'><label for='mdfb'> Facebook Fan Page URL </label></td>
+<td width='60%'><input class='text-input' type='text' id='mdfb' name='mdfb' value='http://facebook.com/makingdifferent' size='30'></td>
+</tr>
+<tr>
+<td width='40%'><label for='mdtwitter'> Twitter Username </label></td>
+<td width='60%'><input class='text-input' type='text' id='mdtwitter' name='mdtwitter' value='nitinmaheta' size='30'></td>
+</tr>
+<tr>
+<td width='40%'><label for='mdgplus'> Google+ ID </label></td>
+<td width='60%'><input class='text-input' type='text' id='mdgplus' name='mdgplus' value='107623672370816719133' size='30'></td>
+</tr>
+<tr>
+<td width='40%'><label for='mdfeed'> FeedBurner ID </label></td>
+<td width='60%'><input class='text-input' type='text' id='mdfeed' name='mdfeed' value='MakingDiffrent' size='30'></td>
+</tr>
+<tr>
+<td width='40%'><label for='mdbio'> Your Short Bio </label></td>
+<td width='60%'><textarea class='textarea-box' id='mdbio' name='mdbio' cols='46' rows='6'>Hi`i'm Nitin Maheta ,from india,i love to blogging, Desing Blogger template, Web Developing and Designing.i like to learn and share technical hacking/security tips with you,i love my friends. </textarea></td>
+</tr>
+<tr>
+<td width='40%'><label for='mdimg'> Blog Logo Or Your Image URL </label></td>
+<td width='60%'><input class='text-input' type='text' id='mdimg' name='mdimg' value='http://1.bp.blogspot.com/-lu9dL_yq7hk/TvsFsoW5UAI/AAAAAAAACCs/e4r09grJSdM/s1600/Untitled-1+copy.jpg' size='30'></td>
+</tr>
+<tr>
+<td width='40%'><label for='mdbgcolor'> Background Color </label></td>
+<td width='60%'>#<input class='inputcolor text-input' type='text' id='mdbgcolor' name='mdbgcolor' value='eee' size='6'><span
+class="colorbox"></span></td>
+</tr>
+<tr>
+<td width='40%'><label for='mdbordercolor'> Border Color </label></td>
+<td width='60%'>#<input class='inputcolor text-input' type='text' id='mdbordercolor' name='mdbordercolor' value='ccc' size='6'><span
+class="colorbox"></span></td>
+</tr>
+<tr>
+<td width='40%'><label for='mdfontcolor'> Font Color </label></td>
+<td width='60%'>#<input class='inputcolor text-input' type='text' id='mdfontcolor' name='mdfontcolor' value='000' size='6'><span
+class="colorbox"></span></td>
+</tr>
+</table>
+</fieldset>
+<br>
+<center><input value='Generate' style="font-size: 22px; width: 175px;" type='button' onclick='javascript:makingdifferentcodegen();'/><input style='font-size: 22px; width: 175px;' type="button" name="preview"  value="Preview" disabled="disabled" onclick="javascript:mdpredemo();" ></center>
+<br>
+<fieldset><legend>CSS</legend>
+<textarea class='textarea-box' name='authcode' onfocus="this.select()" onmouseover="this.focus()" onclick="this.focus();this.select()" style=background:#ffffff;width:100%;height:100px;' readonly='readonly' name='tbox'></textarea></fieldset>
+<fieldset><legend>HTML</legend><textarea id="md_gj37765" class='textarea-box' name='authcode2' onchange='makingdifferentconv()' onfocus="this.select()" onmouseover="this.focus()" onclick="this.focus();this.select()" style=background:#ffffff;width:100%;height:100px;' readonly='readonly' name='tbox'></textarea></fieldset>
+<center><span style="font-size: small;"> Copyright &copy; 2012 All Rights Reserved by <a class="g-profile" href="http://plus.google.com/110227504759359955491" target="_blank">Nitin Maheta</a> @ <a href='http://www.gj37765.blogspot.com/' target="_blank">Making Different</a></span></center>
+</div>
+</body>
+</html>
