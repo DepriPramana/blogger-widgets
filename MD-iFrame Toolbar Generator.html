@@ -97,82 +97,100 @@ background:#FFFFFF;
 		</style>
 <script type='text/javascript'>
 //<!--
-function makingdifferentcodegen(){
-var nit = document.getElementsByName("nitt")[0].value;
-var blogname = document.getElementsByName("mdblogname")[0].value;
-var blogurl = document.getElementsByName("mdblogurl")[0].value;
-var fontcolor = document.getElementsByName("mdfontcolor")[0].value;
-var linkcolor = document.getElementsByName("mdlinkscolor")[0].value;
-var linkhovercolor = document.getElementsByName("mdlinkshovercolor")[0].value;
-var blogtitlelinkcolor = document.getElementsByName("mdblogtitlelinkscolor")[0].value;
-var blogtitlelinkhover = document.getElementsByName("mdbloghov")[0].value;
-var headerlinkshadow = document.getElementsByName("mdshadow")[0].value;
-var toolbarbg = document.getElementsByName("mdtoolbarbg")[0].value;
-var menubarbg = document.getElementsByName("mdmenubarbg")[0].value;
-var link1 = document.getElementsByName("mdlink1")[0].value;
-var name1 = document.getElementsByName("mdname1")[0].value;
-var link2 = document.getElementsByName("mdlink2")[0].value;
-var name2 = document.getElementsByName("mdname2")[0].value;
-var link3 = document.getElementsByName("mdlink3")[0].value;
-var name3 = document.getElementsByName("mdname3")[0].value;
-var widget = document.getElementsByName("mdcode")[0];
-widget.value = "<!DOCTYPE html PUBLIC \"-\/\/W3C\/\/DTD XHTML 1.0 Transitional\/\/EN\" \"http:\/\/www.w3.org\/TR\/xhtml1\/DTD\/xhtml1-transitional.dtd\">";
-widget.value += "<html><head><style type=\"text\/css\">";
-widget.value += "html{overflow:hidden;}\/*we don't need any scrolls for our html *\/";
-widget.value += "body{margin:0;padding:0;font-family:arial,sans-serif;font-size:16px;color:#"+ fontcolor +";}a{color:#"+ linkcolor +";text-decoration:none;}a:hover{color:#"+ linkhovercolor +";text-decoration:none;}img{border:0;}#toolbar{background:#"+ toolbarbg +";height:53px;overflow:hidden;}#search{float:left;width:270px;margin:10px 0 0 15px;}#search a{color:#"+ blogtitlelinkcolor +";font:bold 180% Oswald;font-weight:900;text-shadow:1px 1px 10px #"+ headerlinkshadow +";padding:5px 5px .15em;text-decoration:none;margin-left:auto;margin-right:auto;}#search a:hover{color:#"+ blogtitlelinkhover +";text-decoration:none;}#main{margin-left:15px;}#links{height:25px;}#close{width:16px;height:16px;margin:18px 0 0 0;position:absolute;right:5px;background:url(http:\/\/4.bp.blogspot.com\/-S6Ba-AjQXBs\/T0X4-ZcxyCI\/AAAAAAAACqM\/3j3ve6xWNFE\/s1600\/%255Bwww.gj37765.blogspot.com%255Dr.png) transparent no-repeat;}#arrow{position:absolute;right:30px;width:16px;height:16px;margin:18px 0 0 0;background:url(http:\/\/4.bp.blogspot.com\/-S6Ba-AjQXBs\/T0X4-ZcxyCI\/AAAAAAAACqM\/3j3ve6xWNFE\/s1600\/%255Bwww.gj37765.blogspot.com%255Dr.png) transparent no-repeat;background-position:-32px 0;}#back{background:#"+ menubarbg +";width:523px;height:31px;position:absolute;margin:12px 0 0 0;padding-left:35px;padding-top:7px;left:280px;font-weight:bold;\/*border-radius*\/-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:"+ nit +"px;}#twitter{width:90px;height:25px;margin:18px 0 0 0;position:absolute;right:100px;background:url(http:\/\/2.bp.blogspot.com\/-ATU-s-QQTR0\/T0X5c2GmweI\/AAAAAAAACqU\/PY0M_WC9qEo\/s1600\/%255Bwww.gj37765.blogspot.com%255Dretweet.png) transparent no-repeat;}#face{width:90px;height:25px;margin:18px 0 0 0;position:absolute;right:200px;}#extra{height:100px;margin:35px 0 0 0;}#iframe{overflow:hidden;}\/*this is to remove the scroll when not needed*\/";
-widget.value += "#iframe, iframe{width:100%;height:100%;}<\/style>";
-widget.value += "<script src=\"https:\/\/sites.google.com\/site\/bloggerwidgets01\/[www.gj37765.blogspot.com]jquery-1.3.2.min.js\" type=\"text\/javascript\" ><\/script>";
-widget.value += "<script src=\"https:\/\/sites.google.com\/site\/bloggerwidgets01\/iframe.js\" type=\"text\/javascript\" ><\/script>	";
-widget.value += "<title>"+ blogname +" Browser.<\/title>";
-widget.value += "<\/head>";
-widget.value += "<body>";
-widget.value += "<div id='toolbar'>";
-widget.value += "<div id='search'>";
-widget.value += "<a href='"+ blogurl +"'>"+ blogname +"<\/a>";
-widget.value += "<\/div>";
-widget.value += "<div id='main'>";
-widget.value += "<div id='links'>";
-widget.value += "<div id='back'><font size=\"2px\"><a href='javascript:void(0);'>Go back<\/a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href=\""+ link1 +"\">"+ name1 +"<\/a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href=\""+ link2 +"\">"+ name2 +"<\/a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href=\""+ link3 +"\">"+ name3 +"<\/a><\/font><\/div>";
-widget.value += "<div id='face'><a name=\"fb_share\" type=\"button_count\" href=\"http:\/\/www.facebook.com\/sharer.php\">Share<\/a><script src=\"http:\/\/static.ak.fbcdn.net\/connect.php\/js\/FB.Share\" type=\"text\/javascript\"><\/script><\/div>";
-widget.value += "<a id='twitter' href='javascript:void(0);'><\/a>";
-widget.value += "<a id='arrow' href='javascript:void(0);'><\/a>";
-widget.value += "<a id='close' href='javascript:void(0);'><\/a>";
-widget.value += "<\/div>";
-widget.value += "<div id='extra'>";
-widget.value += "<\/div><\/div><\/div>";
-widget.value += "<div id='iframe'>";
-widget.value += "<iframe src='' \/> ";
-widget.value += "<\/div> <\/body><\/html>";
-document.getElementsByName("preview")[0].disabled=false;
-document.getElementsByName("reset")[0].disabled=false;
-}
-function mdpredemo() {	
-var demodata = document.getElementsByName('mdcode')[0].value;
-newwindow=window.open('','name','');
-var tmp = newwindow.document;tmp.write('<html><head><title>Demo for Iframe Toolbar  by Making Different</title></head><body>' + demodata + '</body></html>');tmp.close();
-}
-function makingdifferentReset() {
-document.getElementsByName("mdblogname")[0].value = "Making Different";
-document.getElementsByName("mdblogurl")[0].value = "http://www.makingdifferent.com";
-document.getElementsByName("mdfontcolor")[0].value = "6C8289";
-document.getElementsByName("mdlinkscolor")[0].value = "F9780E";
-document.getElementsByName("mdlinkshovercolor")[0].value = "111111";
-document.getElementsByName("mdblogtitlelinkscolor")[0].value = "F9EAD4";
-document.getElementsByName("mdbloghov")[0].value = "111111";
-document.getElementsByName("mdshadow")[0].value = "FFFFFF";
-document.getElementsByName("mdtoolbarbg")[0].value = "F9780E";
-document.getElementsByName("mdmenubarbg")[0].value = "F9EAD4";
-document.getElementsByName("mdlink1")[0].value = "http://www.makingdifferent.com/search/label/Widget";
-document.getElementsByName("mdname1")[0].value = "Blogger Widgets";
-document.getElementsByName("mdlink2")[0].value = "http://www.makingdifferent.com/search/label/Tutorials";
-document.getElementsByName("mdname2")[0].value = "Turorials";
-document.getElementsByName("mdlink3")[0].value = "http://www.makingdifferent.com/p/making-differents-blogger-tools.html";
-document.getElementsByName("mdname3")[0].value = "Blogger Tools";
-document.getElementsByName("preview")[0].disabled = true;
-document.getElementsByName("mdcode")[0].value = "";
-document.getElementsByName("nitt")[0].value = "20";
-document.getElementsByName("reset")[0].disabled=true;
-}	
+function makingdifferentcodegen()
+   {var nit = document.getElementsByName("nitt")[0].value;
+    var blogname = document.getElementsByName("mdblogname")[0].value;
+    var blogurl = document.getElementsByName("mdblogurl")[0].value;
+    var fontcolor = document.getElementsByName("mdfontcolor")[0].value;
+    var linkcolor = document.getElementsByName("mdlinkscolor")[0].value;
+    var linkhovercolor = document.getElementsByName("mdlinkshovercolor")[0].value;
+    var blogtitlelinkcolor = document.getElementsByName("mdblogtitlelinkscolor")[0].value;
+    var blogtitlelinkhover = document.getElementsByName("mdbloghov")[0].value;
+    var headerlinkshadow = document.getElementsByName("mdshadow")[0].value;
+    var toolbarbg = document.getElementsByName("mdtoolbarbg")[0].value;
+    var menubarbg = document.getElementsByName("mdmenubarbg")[0].value;
+    var link1 = document.getElementsByName("mdlink1")[0].value;
+    var name1 = document.getElementsByName("mdname1")[0].value;
+    var link2 = document.getElementsByName("mdlink2")[0].value;
+    var name2 = document.getElementsByName("mdname2")[0].value;
+    var link3 = document.getElementsByName("mdlink3")[0].value;
+    var name3 = document.getElementsByName("mdname3")[0].value;
+    var widget = document.getElementsByName("mdcode")[0];
+    widget.value = 
+      "<!DOCTYPE html PUBLIC \"-\/\/W3C\/\/DTD XHTML 1.0 Transitional\/\/EN\" \"http:\/\/www.w3.org\/TR\/xhtml1\/DTD\/xhtml1-transitional.dtd\">\n";
+    widget.value += "<html>\n<head>\n<style type=\"text\/css\">\n";
+    widget.value += "html{overflow:hidden;}\/*we don't need any scrolls for our html *\/\n";
+    widget.value += "body{margin:0;padding:0;font-family:arial,sans-serif;font-size:16px;color:#" + fontcolor +
+      ";}a{color:#" + linkcolor +";text-decoration:none;}a:hover{color:#" + linkhovercolor +";text-decoration:none;}img{border:0;}#toolbar{background:#" + 
+      toolbarbg +";height:53px;overflow:hidden;}#search{float:left;width:270px;margin:10px 0 0 15px;}#search a{color:#" + blogtitlelinkcolor +
+      ";font:bold 180% Oswald;font-weight:900;text-shadow:1px 1px 10px #" + headerlinkshadow +
+      ";padding:5px 5px .15em;text-decoration:none;margin-left:auto;margin-right:auto;}#search a:hover{color:#" + 
+      blogtitlelinkhover +
+      ";text-decoration:none;}#main{margin-left:15px;}#links{height:25px;}#close{width:16px;height:16px;margin:18px 0 0 0;position:absolute;right:5px;background:url(http:\/\/4.bp.blogspot.com\/-S6Ba-AjQXBs\/T0X4-ZcxyCI\/AAAAAAAACqM\/3j3ve6xWNFE\/s1600\/%255Bwww.gj37765.blogspot.com%255Dr.png) transparent no-repeat;}#arrow{position:absolute;right:30px;width:16px;height:16px;margin:18px 0 0 0;background:url(http:\/\/4.bp.blogspot.com\/-S6Ba-AjQXBs\/T0X4-ZcxyCI\/AAAAAAAACqM\/3j3ve6xWNFE\/s1600\/%255Bwww.gj37765.blogspot.com%255Dr.png) transparent no-repeat;background-position:-32px 0;}#back{background:#" + 
+      menubarbg +
+      ";width:523px;height:31px;position:absolute;margin:12px 0 0 0;padding-left:35px;padding-top:7px;left:280px;font-weight:bold;\/*border-radius*\/-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:" + nit + 
+      "px;}#twitter{width:90px;height:25px;margin:18px 0 0 0;position:absolute;right:100px;background:url(http:\/\/2.bp.blogspot.com\/-ATU-s-QQTR0\/T0X5c2GmweI\/AAAAAAAACqU\/PY0M_WC9qEo\/s1600\/%255Bwww.gj37765.blogspot.com%255Dretweet.png) transparent no-repeat;}#face{width:90px;height:25px;margin:18px 0 0 0;position:absolute;right:200px;}#extra{height:100px;margin:35px 0 0 0;}#iframe{overflow:hidden;}\/*this is to remove the scroll when not needed*\/";
+    widget.value += "#iframe, iframe{width:100%;height:100%;}<\/style>\n";
+    widget.value += 
+      "<script src=\"http:\/\/makingdifferent.github.com\/blogger-widgets\/[www.gj37765.blogspot.com]jquery-1.3.2.min.js\" type=\"text\/javascript\" ><\/script>\n";
+    widget.value += 
+      "<script src=\"http:\/\/makingdifferent.github.com\/blogger-widgets\/iframe.js\" type=\"text\/javascript\" ><\/script>	";
+    widget.value += "<title>" + blogname + " Browser.<\/title>\n";
+    widget.value += "<\/head>\n";
+    widget.value += "<body>\n";
+    widget.value += "<div id='toolbar'>\n";
+    widget.value += "<div id='search'>\n";
+    widget.value += "<a href='" + blogurl + "'>" + blogname + "<\/a>\n";
+    widget.value += "<\/div>\n";
+    widget.value += "<div id='main'>\n";
+    widget.value += "<div id='links'>\n";
+    widget.value += 
+      "<div id='back'><font size=\"2px\"><a href='javascript:void(0);'>Go back<\/a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href=\"" + link1 + "\">" + name1 + 
+      "<\/a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href=\"" + link2 + "\">" + name2 + 
+      "<\/a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href=\"" + link3 + "\">" + name3 + "<\/a><\/font><\/div>\n";
+    widget.value += "<a id='arrow' href='javascript:void(0);'><\/a>\n";
+    widget.value += "<a id='close' href='javascript:void(0);'><\/a>\n";
+    widget.value += "<\/div>\n";
+    widget.value += "<div id='extra'>\n";
+    widget.value += "<\/div><\/div><\/div>\n";
+    widget.value += "<div id='iframe'>\n";
+    widget.value += "<iframe src='' \/> \n";
+    widget.value += "<\/div> \n<\/body>\n<\/html>\n";
+    document.getElementsByName("preview")[0].disabled = false;
+    document.getElementsByName("reset")[0].disabled = false;
+   }
+
+function mdpredemo()
+   {var demodata = document.getElementsByName('mdcode')[0].value;
+    newwindow = window.open('', 'name', '');
+    var tmp = newwindow.document;
+    tmp.write( '<html><head><title>Demo for Iframe Toolbar  by Making Different</title></head><body>' + demodata + 
+      '</body></html>');
+    tmp.close();
+   }
+
+function makingdifferentReset()
+   {document.getElementsByName("mdblogname")[0].value = "Making Different";
+    document.getElementsByName("mdblogurl")[0].value = "http://gj37765.blogspot.com";
+    document.getElementsByName("mdfontcolor")[0].value = "6C8289";
+    document.getElementsByName("mdlinkscolor")[0].value = "F9780E";
+    document.getElementsByName("mdlinkshovercolor")[0].value = "111111";
+    document.getElementsByName("mdblogtitlelinkscolor")[0].value = "F9EAD4";
+    document.getElementsByName("mdbloghov")[0].value = "111111";
+    document.getElementsByName("mdshadow")[0].value = "FFFFFF";
+    document.getElementsByName("mdtoolbarbg")[0].value = "F9780E";
+    document.getElementsByName("mdmenubarbg")[0].value = "F9EAD4";
+    document.getElementsByName("mdlink1")[0].value = "http://gj37765.blogspot.com/search/label/WIDGET";
+    document.getElementsByName("mdname1")[0].value = "Blogger Widgets";
+    document.getElementsByName("mdlink2")[0].value = "http://gj37765.blogspot.in/search/label/TUTORIALS";
+    document.getElementsByName("mdname2")[0].value = "Turorials";
+    document.getElementsByName("mdlink3")[0].value = "http://gj37765.blogspot.in/search/label/TOOLS";
+    document.getElementsByName("mdname3")[0].value = "Blogger Tools";
+    document.getElementsByName("preview")[0].disabled = true;
+    document.getElementsByName("mdcode")[0].value = "";
+    document.getElementsByName("nitt")[0].value = "20";
+    document.getElementsByName("reset")[0].disabled = true;
+   }	
 //-->
 </script>
 </head>
