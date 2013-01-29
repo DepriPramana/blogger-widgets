@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Blog Statistics widget Generator</title>
+<style type="text/css">
+.text-input, .select-box{
+  margin:0 2px;
+	padding:4px 6px;
+	border: 1px solid #F9780E;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-family: gergia;
+	font-style: italic;
+
+	-webkit-box-shadow: 1px 1px 1px #dfdfdf;
+	-moz-box-shadow: 1px 1px 1px #dfdfdf;
+	box-shadow: 1px 1px 1px #dfdfdf;
+	font-size: 14px;
+	color: #666;
+	max-width:auto;
+}
+body { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: center;font-size:small;}
+#outer-wrapper {font-family: Verdana, Arial;}
+#content-wrapper { width: 95%;  margin: 0 auto;  padding: 1%;  text-align: center;
+background:#FFFFFF;
+}
+#content-wrapper h2 {font-size:20px;margin: 5px 0 1em ;padding: 3px 10px;background-color: #FFFFFF;font-size:16px;color:#333333;border:1px solid #111;
+}
+</style>
+<script language="javascript">
+var options = "";
+function Generate() {var bUrl = document.getElementsByName("myBlogUrl")[0].value;
+if(bUrl.substring(0,7)=="http://")bUrl=bUrl.substring(7,bUrl.length);
+if(bUrl[bUrl.length-1]=="/")bUrl=bUrl.substring(0,bUrl.length-1);
+var widara = document.getElementsByTagName("textarea")[0];
+widara.value = "\<script style=\"text/javascript\"\>function numberofposts(json) { document.write('Total Posts :' \+ json.feed.openSearch$totalResults.$t \+ '\<br\>')\; }function numberofcomments(json) { document.write('Total Comments :' \+ json.feed.openSearch$totalResults.$t )\; }\</script\>\n";widara.value = widara.value + "\<a href='http://www.makingdifferent.com'\>\<img style='border: 0px' src='https://lh6.googleusercontent.com/-SVaVM3MVBnU/TmImopxtVeI/AAAAAAAABPA/ljMUG0bpf7s/trans%25255B1%25255D.gif'/\>\</a\>";
+widara.value = widara.value +"\<script src=\"http://"+bUrl+"/feeds/posts/default?alt=json-in-script&callback=numberofposts\"\>\</script\>\n";
+widara.value = widara.value +"\<script src=\"http://"+bUrl+"/feeds/comments/default?alt=json-in-script&callback=numberofcomments\"\>\</script\>";
+var genbutton = document.getElementsByName("go")[0];genbutton.disabled = false;
+}
+function defaultV() {document.getElementsByName("widget.title")[0].value = "Blog Statistics";document.getElementsByName("myBlogUrl")[0].value = "makingdifferent.com";document.getElementsByName("go")[0].disabled = true;}	
+</script>
+</head>
+<body>   
+    <div id="content-wrapper">
+       <h2>Blog Statistics widget Generator</h2>
+<form method="post" action="http://www.blogger.com/add-widget" target="_blank">
+<input name="infoUrl" value="http://www.makingdifferent.com" type="hidden">
+<input name="logoUrl" value="" type="hidden">
+<table width="95%">
+<tr><td width="50%">Widget Title:</td> 
+<td width="50%"><input class="text-input" size="25" name="widget.title" value="Blog Statistics" type="text"></td>
+</tr>
+<tr>
+<td>&nbsp;</td></tr>
+<tr>
+<td>
+<span style="float:left;">Blog url:</span>
+<span style="float:right;">http:// </span></td>
+<td><input class="text-input" size="25" name="myBlogUrl" value="makingdifferent.com" type="text">/</td>
+</tr>
+</table>
+<br>
+<br>
+<input style="width:100px;" value="Generate" onclick="javascript:Generate();" type="button">
+<input style="width:100px;" value="Default" onclick="javascript:defaultV();" type="button">
+<br>
+<input style="width:205px;margin-top:5px;" disabled="disabled" name="go" value="Add to Blogger" type="submit"><br>
+<textarea name="widget.content" style="display: none;"></textarea>
+</form>
+<br>
+Copyright &#169; by Nitin Maheta @ <a href="http://www.makingdifferent.com/">Making Different</a>
+</div>
+</body>
+</html>
