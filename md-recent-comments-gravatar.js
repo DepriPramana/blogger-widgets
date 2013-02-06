@@ -99,6 +99,6 @@ function md_recent_comments(md)
        {hideCSS = "display:none;";
        }
     commentsHtml += "<span style=\"font-size:10px;display:block;text-align:right;" + hideCSS + 
-      "\">Widget by <a href=\"http://www.makingdiffernet.com/\">Making Different</a></span>";
+      "\">Widget by <a href=\"http://www.makingdifferent.com/\">Making Different</a></span>";
     document.write(commentsHtml);
    }
