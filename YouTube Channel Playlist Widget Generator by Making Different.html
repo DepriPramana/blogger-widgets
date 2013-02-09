@@ -1,0 +1,225 @@
+<html>
+<head>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<link rel="stylesheet" type="text/css" href="http://makingdifferent.github.com/blogger-widgets/colorpicker.css" media="all" />
+<script type='text/javascript'src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=1.7.1'>
+</script>
+<script type="text/javascript" src="http://makingdifferent.github.com/blogger-widgets/jquery.validationEngine.js"></script>
+<script type="text/javascript" src="http://makingdifferent.github.com/blogger-widgets/colorpicker.js"></script>
+<script type="text/javascript" src="http://makingdifferent.github.com/blogger-widgets/widget.js"></script>
+<title>YouTube Channel Playlist Widget Generator by Making Different</title>
+<style type="text/css">
+.textarea-box, .textareaBox{
+border:1px solid #F9780E;
+padding:6px;
+-webkit-resize: none;
+-moz-resize: none;
+resize: none;
+-webkit-box-shadow: 1px 1px 1px #dfdfdf;
+-moz-box-shadow: 1px 1px 1px #dfdfdf;
+box-shadow: 1px 1px 1px #dfdfdf;
+
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+.textareaBox{
+display:block;
+width:90%;
+padding:10px;
+max-width:98%;
+margin:20px auto;
+max-height:600px;
+min-height:300px;
+}
+.text-input, .select-box{
+margin:0 2px;
+padding:4px 6px;
+border: 1px solid #F9780E;
+
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+font-family: gergia;
+font-style: italic;
+
+-webkit-box-shadow: 1px 1px 1px #FC7507;
+-moz-box-shadow: 1px 1px 1px #FC7507;
+box-shadow: 1px 1px 1px #FC7507;
+font-size: 14px;
+color: #666;
+max-width:auto;
+}
+
+body { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;font-size:18px;
+}
+
+label { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;font-size:15px; font-weight:bold; }
+
+fieldset { padding:0 1.4em 1.4em 1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
+#outer-wrapper {font-family: Verdana, Arial;}
+#content-wrapper { width: 98%; max-widtd:980px; margin: 0 auto; padding: 5px; text-align: left;
+background:#ffffff;
+}
+#content-wrapper h2 {text-align:center;font-size:20px;margin: 5px 0 1em ;padding: 3px 10px;background-color: #ffffff;font-size:16px;color:#000;border:1px solid #111;
+}
+  	</style>
+
+<script type='text/javascript'>
+//<!--
+function makingdifferentcodegen(){
+var ytuname = document.getElementsByName("mduname")[0].value;
+var swplyr = document.getElementsByName("mdswplyr")[0].value;
+var plyw = document.getElementsByName("mdplyw")[0].value;
+var plyh = document.getElementsByName("mdplyh")[0].value;
+var chnl = document.getElementsByName("mdchnl")[0].value;
+var loadingt = document.getElementsByName("mdloadt")[0].value;
+var numtod = document.getElementsByName("mdnumtod")[0].value;
+var plyrbg = document.getElementsByName("mdpbg")[0].value;
+var plyrborder = document.getElementsByName("mdpborder")[0].value;
+var imgbordercolor = document.getElementsByName("mdimgbor")[0].value;
+var imgbordercolor = document.getElementsByName("mdimgbor")[0].value;
+var mdcode = document.getElementsByName("mdjscode")[0].value;
+var mdwidget = document.getElementsByName("mdtextcode")[0];
+mdwidget.value = "";
+if (mdcode == 1) {
+mdwidget.value = "<script type=\"text\/javascript\" src=\"http:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.7.1\/jquery.min.js\"><\/script>\n";}
+if (mdcode == 2) {mdwidget.value = "";}
+mdwidget.value += "<style type=\"text\/css\">\n";
+mdwidget.value += "#MD-youtubevideos{width:600px;margin:0 auto;}\n";
+mdwidget.value += ".video{display:-moz-inline-stack;display:inline-block;vertical-align:top;zoom:1;*display:inline;width:120px;text-align:center;padding:5px;}";
+mdwidget.value += ".video img{width:120px;border:solid 1px #"+ imgbordercolor +";}\n";
+mdwidget.value += ".video a{font-size:11px;font-style:oblique;text-align:left;}\n";
+mdwidget.value += "#MD-Player{width:"+ plyw +"px;cursor:move;background:#"+ plyrbg +";border:solid 1px #"+ plyrborder +";padding:5px;margin-bottom:15px;-webkit-box-shadow:0px 10px 22px #9B9B9B;-moz-box-shadow:0px 10px 22px #9B9B9B;box-shadow:0px 10px 22px #9B9B9B;}\n";
+mdwidget.value += "#MD-Player a{top:-10px;font-size:12px;color:#333;}\n";
+mdwidget.value += "span.MD-Link{font-weight:bold;font-style:normal;font-size:11px;}\n";
+mdwidget.value += "<\/style>\n		";
+mdwidget.value += "<script type=\"text\/javascript\" src=\"http:\/\/makingdifferent.github.com\/blogger-widgets\/MD-youtube-plugin.js\"><\/script>\n";
+mdwidget.value += "                        <script type=\"text\/javascript\">\n";
+mdwidget.value += "			$(document).ready(function() {\n";
+mdwidget.value += "				$('#MD-youtubevideos').youTubeChannel({ \n";
+mdwidget.value += "					userName: '"+ ytuname +"',\n ";
+mdwidget.value += "					showPlayer: "+ swplyr +",\n";
+mdwidget.value += "					playerWidth: \""+ plyw +"\",\n";
+mdwidget.value += "					playerHeight: \""+ plyh +"\",\n";
+mdwidget.value += "					channel: \""+ chnl +"\",\n";
+mdwidget.value += "                                        loadingText: \""+ loadingt +"\",\n ";
+mdwidget.value += "					hideAuthor: true,\n";
+mdwidget.value += "					numberToDisplay: "+ numtod +",\n";
+mdwidget.value += "					linksInNewWindow:true\n               ";
+mdwidget.value += "				});\n";
+mdwidget.value += "			});\n";
+mdwidget.value += "		<\/script>\n";
+mdwidget.value += "\n";
+mdwidget.value += "<div id=\"MD-youtubevideos\"><\/div>";
+document.getElementsByName("preview")[0].disabled=false;
+}
+function mdpredemo() {	
+var demodata = document.getElementsByName('mdjs')[0].value + document.getElementsByName('mdtextcode')[0].value;
+newwindow=window.open('','name','');
+var tmp = newwindow.document;tmp.write('' + demodata + '');tmp.close();
+}
+//-->
+</script>
+</head>
+<body>
+<div id='content-wrapper'>
+<h2>YouTube Channel Playlist Widget Generator by Making Different</h2>
+<fieldset class='redi'><legend class='redi' align='left' style='border:1px solid #7F9DB9;padding:3px 10px;margin-left:20px;'>Settings</legend><br>
+<table width="100%">
+<tr>
+<td width='60%'><label for='mduname'>Youtube Channel Username</label>:</td>
+<td width='40%'><input class='text-input' type='text' id='mduname' name='mduname' value='nitin16919' size='25'></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='mdswplyr'>Show Youtube Player?</label></td>
+<td width='40%'>
+<select class='select-box' id='mdswplyr'  name='mdswplyr'>
+<option value='true'>Yes</option>
+<option value='false'>No</option> 
+</select>
+</td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='mdnumtod'>Number of Youtube Videos </label></td>
+<td width='40%'><input class='text-input' type='text' id='mdnumtod' name='mdnumtod' value='10' size='6'></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='mdplyw'>Youtube Player Width</label></td>
+<td width='40%'><input class='text-input' type='text' id='mdplyw' name='mdplyw' value='600' size='6'></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='mdplyh'>Youtube Player Height</label></td>
+<td width='40%'><input class='text-input' type='text' id='mdplyh' name='mdplyh' value='400' size='6'></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='mdchnl'>Choose Channel</label></td>
+<td width='40%'>
+<select class='select-box' id='mdchnl'  name='mdchnl'>
+<option value='uploads'>Uploads</option>
+<option value='favorites'>Favorites</option> 
+</select>
+</td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='mdloadt'>Loading Text</label></td>
+<td width='40%'><input class='text-input' type='text' id='mdloadt' name='mdloadt' value='Loading...Please Wait' size='25'></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='mdpbg'>Youtube Player Background Color</label></td>
+<td width='40%'><input class='inputcolor text-input' type='text' id='mdpbg' name='mdpbg' value='FFFFFF' size='6'><span
+class="colorbox"></span></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='mdpborder'>Youtube Player Border Color</label></td>
+<td width='40%'><input class='inputcolor text-input' type='text' id='mdpborder' name='mdpborder' value='DDDDDD' size='6'><span
+class="colorbox"></span></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='mdimgbor'>Videos Thumbnails Border Color</label></td>
+<td width='40%'><input class='inputcolor text-input' type='text' id='mdimgbor' name='mdimgbor' value='DDDDDD' size='6'><span
+class="colorbox"></span></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='mdjscode'>Do You Have jQuery Plugin in Your Blog?</label></td>
+<td width='40%'>
+<select class='select-box' id='mdjscode'  name='mdjscode'>
+<option value='2'>Yes</option>
+<option value='1'>No</option> 
+</select>
+</td>
+</tr>
+<tr></tr>
+<tr></tr>
+</table>
+</fieldset>
+<center><input style="width:180px; font-weight:bold;font-size:20px; " value="Generate" onclick="javascript:makingdifferentcodegen();" type="button"><input style="font-size: 22px; width: 175px;" type="button" disabled="disabled" name="preview" value="Preview" onclick="javascript:mdpredemo();" /><br>
+<textarea class='textareaBox' name='mdtextcode' onfocus="this.select()" onmouseover="this.focus()" onclick="this.focus();this.select()" style='background:#ffffff;width:100%;height:300px;' readonly='readonly' name='tbox'></textarea></center>
+<textarea name="mdjs" style="display: none; height: 0px; width: 0px;">
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js'></script>
+</textarea>
+<br>
+<center><span style="font-size: small;"> Copyright &copy; 2013 All Rights Reserved by <a class="g-profile" href="http://plus.google.com/110227504759359955491" target="_blank">Nitin Maheta</a> @ <a href='http://www.makingdifferent.com/' target="_blank">Making Different</a></span></center>
+</div>
+</body>
+</html>
