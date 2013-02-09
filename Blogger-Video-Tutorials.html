@@ -1,0 +1,28 @@
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<style type="text/css">
+#MD-youtubevideos{width:600px;margin:0 auto;}.video{display:-moz-inline-stack;display:inline-block;vertical-align:top;zoom:1;*display:inline;width:120px;text-align:center;padding:5px;}
+.video img{width:120px;border:solid 1px #ddd;}
+.video a{font-size:11px;font-style:oblique;text-align:left;}
+#MD-Player{width:600px;cursor:move;background:#FFF;border:solid 1px #ddd;padding:5px;margin-bottom:15px;-webkit-box-shadow:0px 10px 22px #9B9B9B;-moz-box-shadow:0px 10px 22px #9B9B9B;box-shadow:0px 10px 22px #9B9B9B;}
+#MD-Player a{top:-10px;font-size:12px;color:#333;}
+span.MD-Link{font-weight:bold;font-style:normal;font-size:11px;}
+</style>  	
+<script type="text/javascript" src="http://makingdifferent.github.com/blogger-widgets/MD-youtube-plugin.js"></script>				
+                        <script type="text/javascript">
+			$(document).ready(function() {
+				$('#MD-youtubevideos').youTubeChannel({ 
+					userName: 'nitin16919', 
+					showPlayer: true,
+					playerWidth: "600",
+					playerHeight: "400",
+					channel: "uploads",
+                                        loadingText: "Loading.. Please Wait", 
+					hideAuthor: true,
+					numberToDisplay: 50,
+					linksInNewWindow:true                 
+				});
+			}); 
+			
+		</script>
+
+<div id="MD-youtubevideos"></div>
