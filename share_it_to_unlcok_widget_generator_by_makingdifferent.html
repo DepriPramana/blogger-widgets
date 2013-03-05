@@ -1,0 +1,123 @@
+<html>
+<head>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<title>Share it to Unlock URL Widget Generator by Making Different</title>
+<style type="text/css">
+.textarea-box, .textareaBox{
+border:1px solid #F9780E;
+padding:6px;
+-webkit-resize: none;
+-moz-resize: none;
+resize: none;
+-webkit-box-shadow: 1px 1px 1px #dfdfdf;
+-moz-box-shadow: 1px 1px 1px #dfdfdf;
+box-shadow: 1px 1px 1px #dfdfdf;
+
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+.textareaBox{
+display:block;
+width:90%;
+padding:10px;
+max-width:98%;
+margin:20px auto;
+max-height:100px;
+min-height:100px;
+}
+.text-input, .select-box{
+margin:0 2px;
+padding:4px 6px;
+border: 1px solid #F9780E;
+
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+font-family: gergia;
+font-style: italic;
+
+-webkit-box-shadow: 1px 1px 1px #FC7507;
+-moz-box-shadow: 1px 1px 1px #FC7507;
+box-shadow: 1px 1px 1px #FC7507;
+font-size: 14px;
+color: #666;
+max-width:auto;
+}
+
+body { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;font-size:18px;
+}
+
+label { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;font-size:15px; font-weight:bold; }
+
+fieldset { padding:0 1.4em 1.4em 1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
+#outer-wrapper {font-family: Verdana, Arial;}
+#content-wrapper { width: 98%; max-widtd:980px; margin: 0 auto; padding: 5px; text-align: left;
+background:#ffffff;
+}
+#content-wrapper h2 {text-align:center;font-size:20px;margin: 5px 0 1em ;padding: 3px 10px;background-color: #ffffff;font-size:16px;color:#000;border:1px solid #111;
+}
+  	</style>
+
+<script type='text/javascript'>
+//<!--
+function makingdifferentcodegen(){
+var dl = document.getElementsByName("mddl")[0].value;
+var l = document.getElementsByName("mdl")[0].value;
+if (l.substring(0, 7) == "http://") l = l.substring(7, l.length);
+var t = document.getElementsByName("mdt")[0].value;
+var tt = document.getElementsByName("mdtt")[0].value;
+var mdwidget = document.getElementsByName("mdtextcode")[0];
+mdwidget.value = "<script type=\"text\/javascript\">\n";
+mdwidget.value += "var url = \""+dl+"\";\n";
+mdwidget.value += "var mdfb = \""+l+"\";\n";
+mdwidget.value += "var mdtwt = \""+t+"\";\n";
+mdwidget.value += "var mdtwttxt = \""+tt+"\";\n";
+mdwidget.value += "<\/script>\n";
+mdwidget.value += "<script type=\"text\/javascript\" src=\"http:\/\/makingdifferent.github.com\/blogger-widgets\/share_to_unlock.js\"><\/script>";
+document.getElementsByName("preview")[0].disabled=false;
+}
+function mdpredemo() {	
+var demodata = document.getElementsByName('mdtextcode')[0].value;
+newwindow=window.open('','name','');
+var tmp = newwindow.document;tmp.write('' + demodata + '');tmp.close();
+}
+//-->
+</script>
+</head>
+<body>
+<div id='content-wrapper'>
+<h2>Share it to Unlock URL Widget Generator by Making Different</h2>
+<fieldset><legend>Settings</legend><br>
+<table width="100%">
+<tr>
+<td width='60%' colspan=2><label for='mddl'>Download Link URL</label>:</td>
+<td width='40%'><input class='text-input' type='text' id='mddl' name='mddl' value='http://www.mediafire.com/?rxr9ml12wqgsrhr' size='40'></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width='50%'><label for='mdl'>Facebook fan page URL or Blog URL </label></td>
+<td width='10%' align=right>http://</td><td width='40%'><input class='text-input' type='text' id='mdl' name='mdl' value='www.makingdifferent.com' size='40'></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width='60%' colspan=2><label for='mdt'>Twitter Username</label></td>
+<td width='40%'><input class='text-input' type='text' id='mdt' name='mdt' value='nitinmaheta' size='20'></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width='60%' colspan=2><label for='mdtt'>Tweet This Text</label></td>
+<td width='40%'><input class='text-input' type='text' id='mdtt' name='mdtt' value='Read @ Blogger Widgets, Tips, Hacks - Making Different http://www.makingdifferent.com' size='40'></td>
+</tr>
+</table>
+</fieldset>
+<center><input style="width:180px; font-weight:bold;font-size:20px; " value="Generate" onclick="javascript:makingdifferentcodegen();" type="button"><input style="font-size: 22px; width: 175px;" type="button" disabled="disabled" name="preview" value="Preview" onclick="javascript:mdpredemo();" /><br>
+<textarea class='textareaBox' name='mdtextcode' onfocus="this.select()" onmouseover="this.focus()" onclick="this.focus();this.select()" style='background:#ffffff;width:100%;height:100px;' readonly='readonly'></textarea></center>
+<br>
+<center><span style="font-size: small;"> Copyright &copy; 2013 All Rights Reserved by <a class="g-profile" href="http://plus.google.com/110227504759359955491" target="_blank">Nitin Maheta</a> @ <a href='http://www.makingdifferent.com/' target="_blank">Making Different</a></span></center>
+</div>
+</body>
+</html>
