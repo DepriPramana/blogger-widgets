@@ -1,9 +1,5 @@
 /**
- * Recent Comments Widget with Avatar for Blogger
- *
- * @author  Harish Dasari
- * @link    http://www.way2blogging.org/
- * @version 1.3.1
+ * Recent Comments Widget with Avatar for Blogger by http://www.bloggerwidgetgenerators.com
  *
  * @example
  *    var
@@ -99,6 +95,6 @@ function md_recent_comments(md)
        {hideCSS = "display:none;";
        }
     commentsHtml += "<span style=\"font-size:10px;display:block;text-align:right;" + hideCSS + 
-      "\">Widget by <a href=\"http://www.makingdifferent.com/\">Making Different</a></span>";
+      "\">Widget by <a href=\"http://www.bloggerwidgetgenerators.com/\">Blogger Widget Generators</a></span>";
     document.write(commentsHtml);
    }
