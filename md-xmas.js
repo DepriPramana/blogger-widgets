@@ -1,11 +1,10 @@
 /*
- * TripleFlap, a flying twitter bird v1.2 for Blogger
+ * TripleFlap, a flying santa v1 for Blogger
  *
  * Autor  : Florian Buenzli
  * Copyright: Florian Buenzli, 2010
  * For Blogger by : Nitin Maheta (Making Different)
- * Url		:http://gj37765.blogspot.com/
- * Plugin Page	:http://gj37765.blogspot.com/2011/04/how-to-add-animated-flying-twitter-bird.html
+ * Url		:http://www.makingdifferent.com/
  */
 
 if (typeof(twitterAccount) != "string") var twitterAccount = "";
