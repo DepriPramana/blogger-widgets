@@ -1,0 +1,92 @@
+<html>
+<head>
+<style type="text/css">
+html,body{height:100%;margin:0;padding:0}
+img{border:0}
+body{
+  background-image: url(http://imagesbackgrounds.in/hdwallpaper/snow-night/Skiing_wallpapers_412.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#464646;
+  /* SHORTHAND CSS NOTATION
+   * background: url(http://imagesbackgrounds.in/hdwallpaper/snow-night/Skiing_wallpapers_412.jpg) center center cover no-repeat fixed;
+   */
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  body {
+    /* The file size of this background image is 93% smaller
+     * to improve page load speed on mobile internet connections */
+    background-image: url(http://imagesbackgrounds.in/hdwallpaper/snow-night/Skiing_wallpapers_412.jpg);
+  }
+	}
+body { background-color:#333; }
+#header img{width:100%; height:auto;
+#header{position:fixed;left:0;right:0;z-index:10}
+}
+#snow{
+	background: none;
+	font-family: Androgyne;
+	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:1;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+#wrapper { width: 400px; margin: 40px auto; }
+@media screen and (max-device-width: 480px) {
+        #wrapper { position: relative; left: -3%; }
+		#santaclaus1 img{width:100% !improtant;height:auto;}
+}	
+#santaclaus1 img{
+position:fixed; 
+top: 0px;
+left:0px;
+border:none;
+z-index:5;
+max-width:100%; 
+max-height:100%;
+display:block;
+}	
+</style>
+</head>
+<body>
+<div id="header"><img src="http://1.bp.blogspot.com/-BLlT3PFzM2s/VILomxo_n2I/AAAAAAAAOeg/4kUt-_jrBLo/s1600/Header.png" height="100" /></div>
+<img id="santaclaus1" src="http://2.bp.blogspot.com/-DWHRslGlFDI/VILn5M3nIPI/AAAAAAAAOeQ/xC2EyMyQN1M/s1600/Tomte-o-renar.gif"/>
+<div style="clear:both;"></div>
+<div id="snow">
+</div>
+<div id="wrapper">
+<iframe width="1" height="1" src="http://www.youtube.com/embed/JYLjEItqsWQ?autoplay=1" frameborder="0"></iframe>
+</div>
+</body>
+</html>
